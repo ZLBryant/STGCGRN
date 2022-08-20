@@ -31,7 +31,7 @@ def args_init(dataset):
     config.read(config_file, encoding="utf-8")
     parser = argparse.ArgumentParser(description=config['data']['dataset_name'])
     parser.add_argument("--dataset", type=str, default=config['data']['dataset_name'])
-    parser.add_argument("--model_kind", type=str, default="stdgru")#no_pre/no_adp/no_period/no_window
+    parser.add_argument("--model_kind", type=str, default="stgcgrn")#stgcgrn_no_pre/stgcgrn_no_adp/stgcgrn_no_period/stgcgrn_no_window
     parser.add_argument("--dataset_path", type=str, default=config['data']['dataset_path'])
     parser.add_argument("--adjdata", type=str, default=config['data']['adjdata'])
     parser.add_argument("--node_num", type=int, default=config['data']['node_num'])
